@@ -317,7 +317,7 @@ public class SettingsActivity extends AppCompatActivity {
                             .setQuality(45)
                             .compressToBitmap(thumb_filePath_Uri);
                 } catch (IOException e){
-                    e.printStackTrace();
+                    Log.e("SettingsActivity", "Image compression failed: " + e.getMessage());
                 }
 
 
